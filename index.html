@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Email Detector</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f4f6f8;
+            text-align: center;
+            padding: 40px;
+        }
+
+        textarea {
+            width: 70%;
+            height: 200px;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Phishing Email Detection System</h1>
+
+    <form action="/analyze" method="POST">
+        <textarea name="email_content" placeholder="Paste email content here..." required></textarea>
+        <br>
+        <button type="submit">Analyze Email</button>
+    </form>
+
+</body>
+</html>
